@@ -15,3 +15,4 @@ For arguments:
 ```
 
 # ❗If your username contains spaces, something may go wrong with this script. Be careful when using...
+I use 2 scripts for scanning, one for monthly scanning and one for daily scanning. All settings are the same except timing.

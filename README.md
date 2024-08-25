@@ -1,5 +1,5 @@
 # clamav-win
-This is automation for clamav scan result in Windows
+This is automation for clamav scan in Windows
 
 ### Usage 
 I created a user called ClamAV and gave him the necessary permissions to write log files to specific files.(This is important, you should also check if script execution permission is enabled with the ``Get-ExecutePolicy -List`` command. If not, ``Set-ExecutePolicy Unrestricted -Force`` will work. Otherwise search the internet.)

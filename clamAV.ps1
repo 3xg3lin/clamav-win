@@ -1,5 +1,5 @@
 # Which user is enable on the system.
-$enabledUsers = @("'Kerem Utku Gül'" , "Ortak" , "ClamAV")
+$enabledUsers = @("Ortak" , "ClamAV")
 
 # loop for ClamAV scanner
 foreach ($user in $enabledUsers) {
@@ -12,7 +12,7 @@ foreach ($user in $enabledUsers) {
     "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup",
     )
 
-    $escapedPaths = $paths | ForEach-Object { ""$_"" }
+    $escapedPaths = $paths | ForEach-Object { "`"$_`"" }
     $allPaths = $escapedPaths -join " "
     Write-Output "Checking now: " $allPaths
 

@@ -18,7 +18,7 @@ foreach ($user in $enabledUsers) {
 
     # date for logfile
     $dateTime = (Get-Date).ToString("yyyy-MM-dd_HH-mm-ss")
-    $logFile = "C:\Users\ClamAV\Documents\$user-$path-clamscan-$dateTime.log"
+    $logFile = "C:\Users\ClamAV\Documents\$user-clamscan-$dateTime.log"
         
     clamscan --recursive --remove --log=$logFile $allPaths
 
